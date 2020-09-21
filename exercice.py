@@ -9,6 +9,7 @@ def is_even_len(string: str) -> bool:
         c = True
     else: c = False
 
+
     return c
 
 
@@ -21,12 +22,17 @@ def replace_char(string: str, old_char: str, new_char: str) -> str:
 
 
 def get_number_of_char(string: str, char: str) -> int:
-     
+
     pass
 
 
 def get_number_of_words(sentence: str, word: str) -> int:
-    pass
+    mot = None
+    for mot in sentence:
+        if mot == word:
+            mot += 1
+
+    return mot
 
 
 def main() -> None:
